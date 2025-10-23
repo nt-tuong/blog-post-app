@@ -4,6 +4,7 @@ function Input(props) {
   const inputRef = useRef();
   useEffect(()=>{
     const timer = setTimeout(() => {
+      inputRef.current?.blur();
       inputRef.current?.focus();
     }, 300); // Adjust delay as needed
 
