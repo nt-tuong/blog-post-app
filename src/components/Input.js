@@ -6,7 +6,7 @@ function Input(props) {
     const timer = setTimeout(() => {
       inputRef.current?.blur();
       inputRef.current?.focus();
-    }, 300); // Adjust delay as needed
+    }, 5000); // Adjust delay as needed
 
     return () => clearTimeout(timer);
   },[])
